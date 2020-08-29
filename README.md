@@ -35,7 +35,7 @@ Using a variety of data wrangling techniques, we evaluated the file, discovering
 * DateCreditPulled should be datetime.
 * ListingCategory (numeric) should be a category and eliminate the parentheses. Remove the numeric and replace the values with the categories they actually represent( 0 - Not Available, 1 - Debt Consolidation, 2 - Home Improvement, 3 - Business, 4 - Personal Loan, 5 - Student Use, 6 - Auto, 7- Other, 8 - Baby&Adoption, 9 - Boat, 10 - Cosmetic Procedure, 11 - Engagement Ring, 12 - Green Loans, 13 - Household Expenses, 14 - Large Purchases, 15 - Medical/Dental, 16 - Motorcycle, 17 - RV, 18 - Taxes, 19 - Vacation, 20 - Wedding Loans)
 
-####Tidyness Issues
+#### Tidyness Issues
 * Remove ProsperRatingNumeric as ProsperRatingAlpha contains the category information
 
  Using a combination of programmatic and manual techniques, the data was cleaned and saved as loan_master.csv. 
@@ -87,7 +87,6 @@ It was interesting to see:
 
 Did you observe any interesting relationships between the other features (not the main feature(s) of interest)?
 Initially I was wondering if loans had a different interest rate by category, but, that did not seem to be the case. Looking at violin and box plots of loans by listing category, the distributions did not seem to be visually significantly different, sending me to look for another cause. It is clear from the Box Plot of Prosper Rating and Borrower APR that the level of Borrower Risk identified Prosper determines where the Borrower APR is likely to be set.
-
 
 ### Multivariate Exploration
 
