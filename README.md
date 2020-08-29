@@ -1,12 +1,15 @@
 # Prosper-Loan-Analysis
-### Investigation Overview This project looks at data for the Prosper Funding, LLC, a company linking investors to people in need of personal loans. The loans are unsecured. Prosper does not fund the loans themselves. Prosper offers a way to have multiple investors fund individual loans by providing a piece of the funding. Investors are able to view individual loans on their website, see details regarind the total amount the borrower is requesting, view the identified loan risk and borrower APR. According to their website, the typical return on investment is about 5.3%. (This information was obtained on Prosper's website: https://www.prosper.com)
+### Investigation Overview
+
+>This project looks at data for the Prosper Funding, LLC, a company linking investors to people in need of personal loans. The loans are unsecured. Prosper does not fund the loans themselves. Prosper offers a way to have multiple investors fund individual loans by providing a piece of the funding. Investors are able to view individual loans on their website, see details regarind the total amount the borrower is requesting, view the identified loan risk and borrower APR. According to their website, the typical return on investment is about 5.3%. (This information was obtained on Prosper's website: https://www.prosper.com)
 
 When initially looking at the data, I noticed the dataset provided information regarding loans that are charged off. I am choosing to focus this analysis on loans that are charged-off and what factors may be present in that subset of loans.
 
 As this data was not part of a randomized experiment, findings are not assumed to have causality.
 
 ### Dataset Overview
-The dataset contains 113,937 rows of data and 81 columns of information, including borrower information, credit rating, amount borrowed, Loan Annual Percentage Rate (APR), information about loan losses, loan status, number of investors and loan funding and was provided to Udacity in support of the Data Analyst Nanodegree Program (Source: https://www.google.com/url?q=https://s3.amazonaws.com/udacity-hosted-downloads/ud651/prosperLoanData.csv&sa=D&ust=1554486256021000).
+
+>The dataset contains 113,937 rows of data and 81 columns of information, including borrower information, credit rating, amount borrowed, Loan Annual Percentage Rate (APR), information about loan losses, loan status, number of investors and loan funding and was provided to Udacity in support of the Data Analyst Nanodegree Program (Source: https://www.google.com/url?q=https://s3.amazonaws.com/udacity-hosted-downloads/ud651/prosperLoanData.csv&sa=D&ust=1554486256021000).
 
 The dataset included the Prosper Loan Data in a .csv file and a data dictionary (Source: https://www.google.com/url?q=https://docs.google.com/spreadsheet/ccc?key%3D0AllIqIyvWZdadDd5NTlqZ1pBMHlsUjdrOTZHaVBuSlE%26usp%3Dsharing&sa=D&ust=1554486256024000).  
 
@@ -16,9 +19,11 @@ There are 113,937 rows of data, consisting of 3 boolean variables, 32 floating v
 Metrics related to borrower fiscal health, including account inquiries, number of missed payments and Information regarding number of investors, investment from friends, amount invested, and percent funded to name a few.
 
 ### Data Wrangling
+
 Using a variety of data wrangling techniques, we evaluated the file, discovering a number of opportunities to improve the quality and tidyness of the data.  The following issues were found with the Prosper data set:
 
 #### Quality Issues
+
 * ListingNumber should be object
 * ListingCreationDate should be type "datetime "
 * ClosedDate should be "datetime"
@@ -36,6 +41,7 @@ Using a variety of data wrangling techniques, we evaluated the file, discovering
 * ListingCategory (numeric) should be a category and eliminate the parentheses. Remove the numeric and replace the values with the categories they actually represent( 0 - Not Available, 1 - Debt Consolidation, 2 - Home Improvement, 3 - Business, 4 - Personal Loan, 5 - Student Use, 6 - Auto, 7- Other, 8 - Baby&Adoption, 9 - Boat, 10 - Cosmetic Procedure, 11 - Engagement Ring, 12 - Green Loans, 13 - Household Expenses, 14 - Large Purchases, 15 - Medical/Dental, 16 - Motorcycle, 17 - RV, 18 - Taxes, 19 - Vacation, 20 - Wedding Loans)
 
 #### Tidyness Issues
+
 * Remove ProsperRatingNumeric as ProsperRatingAlpha contains the category information
 
  Using a combination of programmatic and manual techniques, the data was cleaned and saved as loan_master.csv. 
@@ -45,6 +51,7 @@ Using a variety of data wrangling techniques, we evaluated the file, discovering
 I first became interested in the chargeoff category when conducting an initial look at the loan status. Chargedoff is the third largest category, behind loans that are current and those that completed. I am particularly interested in diving into loan chargeoff and in identifying what other factors are present in customers who's loans resulted in chargeoff.
 
 ### Plan to approach analyzing the data
+
 There are a number of variables in the dataset that can support the investigation. We can start by looking at the status of each loan, seeing which loans have the largest categories. We can look at the types of loans that exist in the chargeoff category. We can look at the distribution of data in that category. We will examine the relationship between variables using bivariate and multivariate analysis.
 
 ## Summary of Findings
