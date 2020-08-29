@@ -11,7 +11,7 @@ As this data was not part of a randomized experiment, findings are not assumed t
 
 >The dataset contains 113,937 rows of data and 81 columns of information, including borrower information, credit rating, amount borrowed, Loan Annual Percentage Rate (APR), information about loan losses, loan status, number of investors and loan funding and was provided to Udacity in support of the Data Analyst Nanodegree Program (Source: https://www.google.com/url?q=https://s3.amazonaws.com/udacity-hosted-downloads/ud651/prosperLoanData.csv&sa=D&ust=1554486256021000).
 
-The dataset included the Prosper Loan Data in a .csv file and a data dictionary (Source: https://www.google.com/url?q=https://docs.google.com/spreadsheet/ccc?key%3D0AllIqIyvWZdadDd5NTlqZ1pBMHlsUjdrOTZHaVBuSlE%26usp%3Dsharing&sa=D&ust=1554486256024000).  
+The dataset included the Prosper Loan Data in a .csv file and a data dictionary (Source: https://www.google.com/url?q=https://docs.google.com/spreadsheet/ccc?key%3D0AllIqIyvWZdadDd5NTlqZ1pBMHlsUjdrOTZHaVBuSlE%26usp%3Dsharing&sa=D&ust=1554486256024000).  The dataset is too large to load into the Github repository.   You can download it yourself using the link immediately above.
 
 ### Prosper Data Set Structure
 
